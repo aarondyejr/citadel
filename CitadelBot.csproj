@@ -13,11 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Ensures the .env file is copied to the build and publish outputs -->
-    <Content Include=".env">
+    <None Update=".env" Condition="Exists('.env')">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: read
-  packages: write   # lets the workflow push to GHCR
+  packages: write
 
 jobs:
   build:
